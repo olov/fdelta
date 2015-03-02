@@ -4,7 +4,9 @@ files in [Fossil delta format](http://fossil-scm.org/index.html/doc/trunk/www/de
 
 ### Installation
     git clone https://github.com/olov/fdelta.git
+    cd fdelta
     ./build.sh
+    cp dist/fdelta dist/fapply ~/bin # or wherever
 
 ### Usage
     fapply original delta (modified is written to stdout)
