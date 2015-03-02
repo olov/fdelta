@@ -1,7 +1,7 @@
-#include "fossil_delta.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "fossil_delta.h"
 
 int64_t slurp(const char* filename, char** out) {
   FILE *fp;
