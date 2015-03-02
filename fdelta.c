@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
   int64_t mod_len = slurp(argv[2], &mod);
 
   char* diff = calloc(1, mod_len + 1 + 60 + 1024); // add an extra K just because
-  int n = delta_create(orig, orig_len, mod, mod_len, diff);
+  delta_create(orig, orig_len, mod, mod_len, diff);
 
   fputs(diff, stdout);
 

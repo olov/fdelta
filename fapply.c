@@ -46,7 +46,7 @@ int main(int argc, char* argv[]) {
 
   int64_t mod_len = delta_output_size(delta, delta_len);
   char* mod = calloc(1, mod_len + 1);
-  int n = delta_apply(orig, orig_len, delta, delta_len, mod);
+  delta_apply(orig, orig_len, delta, delta_len, mod);
 
   fputs(mod, stdout);
 
