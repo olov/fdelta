@@ -22,12 +22,11 @@
 ** fossil source code base.  Nothing in this file depends on anything
 ** else in fossil.
 */
-#include "config.h"
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
-#include "delta.h"
+#include "fossil_compat.h"
 
 /*
 ** Macros for turning debugging printfs on and off
