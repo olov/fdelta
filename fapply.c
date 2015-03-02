@@ -35,7 +35,7 @@ int64_t slurp(const char* filename, char** out) {
 // allocated memory is never freed
 int main(int argc, char* argv[]) {
   if (argc != 3) {
-    fprintf(stderr, "fapply original delta\n");
+    fprintf(stderr, "usage: fapply original delta\nmodified is written to stdout\n");
     exit(1);
   }
 
